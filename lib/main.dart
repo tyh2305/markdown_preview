@@ -50,10 +50,10 @@ class _MainState extends State<Main> {
                     children: [
                       Container(
                         height: MediaQuery.of(context).size.height * 0.1,
-                        color: Colors.red,
+                        color: Colors.grey,
                         alignment: Alignment.center,
                         child: Text(
-                          "Original Text",
+                          "Original Text Section",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 20.0,
@@ -89,7 +89,7 @@ class _MainState extends State<Main> {
                         alignment: Alignment.center,
                         color: Colors.green,
                         child: Text(
-                          "Markdown",
+                          "Markdown Section",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 20.0,

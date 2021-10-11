@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:markdown_preview/md.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -113,12 +114,12 @@ class _MainState extends State<Main> {
             ),
             ElevatedButton(
               onPressed: () {
-                print("hehe");
+                Clipboard.setData(ClipboardData(text: _string));
               },
               style: ElevatedButton.styleFrom(
                   padding:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0)),
-              child: Text("Save"),
+              child: Text("Copy"),
             )
           ],
         ),
